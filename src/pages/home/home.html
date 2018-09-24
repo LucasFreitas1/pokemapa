@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>PokeMapa</ion-title>
+    <ion-item class="text" *ngFor="let item of items | async">
+      {{item | json}}
+    </ion-item>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <google-maps></google-maps>
+ 
+</ion-content>
